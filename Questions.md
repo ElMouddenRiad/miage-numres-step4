@@ -32,18 +32,31 @@ Réponse:
 entre 24 et 30 fois
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
-
+roles :
+role="navigation" : indique une zone de navigation.
+role="button" : indique qu’un élément se comporte comme un bouton.
+role="dialog" : indique une boîte de dialogue interactive.
+propriétés :
+aria-label : fournit un nom accessible à un élément.
+aria-live : indique qu’un contenu peut être mis à jour dynamiquement.
+aria-hidden : masque un élément aux technologies d’assistance.
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-1.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
-
+Il faut utiliser HTML sémantique d’abord, et ARIA uniquement si nécessaire.
+Les balises HTML ont déjà des rôles implicites
+Une mauvaise utilisation d’ARIA peut dégrader l’accessibilité
 # Q8: Ajouter le screen de votre score Lighthouse
 Screen:
-
+![alt text](image-2.png)
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
 Réponse:
+Le score Lighthouse n’a pas augmenté car :
+-Les modifications apportées étaient principalement sémantiques et structurelles.
+-Lighthouse mesure surtout des critères techniques détectables automatiquement.
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:

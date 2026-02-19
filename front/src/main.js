@@ -2,56 +2,73 @@ import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-        <div class="header" style="cursor:pointer;">
-          <h1>My Quizz</h1>
-          Pour accéder a la page /about <a href="about/" style="text-decoration: none;">click ici</a>
-        </div>
+<main id="main-content">
 
+  <header>
+    <h1>My Quizz</h1>
+    <p>
+      Pour accéder à la page About,
+      <a href="about/">aller à la page À propos</a>
+    </p>
+  </header>
 
-        <div class="topnav">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-          <a href="#" class="fa fa-snapchat-ghost"></a>
-          <a href="#" class="fa fa-skype"></a>
-          <a href="#" class="fa fa-android"></a>
-          <a href="#" class="fa fa-dribbble"></a>
-          <a href="#" class="fa fa-vimeo"></a>
-          <a href="#" class="fa fa-tumblr"></a>
-          <a href="#" class="fa fa-vine"></a>
-          <a href="#" class="fa fa-foursquare"></a>
-          <a href="#" class="fa fa-stumbleupon"></a>
-          <a href="#" class="fa fa-flickr"></a>
-          <a href="#" class="fa fa-yahoo"></a>
-          <a href="#" class="fa fa-reddit"></a>
-          <a href="#" class="fa fa-rss"></a>
-        </div>
+  <nav class="topnav" aria-label="Réseaux sociaux">
+    <a href="#" aria-label="Facebook" class="fa fa-facebook"></a>
+    <a href="#" aria-label="Twitter" class="fa fa-twitter"></a>
+    <a href="#" aria-label="Google" class="fa fa-google"></a>
+    <a href="#" aria-label="LinkedIn" class="fa fa-linkedin"></a>
+    <a href="#" aria-label="YouTube" class="fa fa-youtube"></a>
+    <a href="#" aria-label="Instagram" class="fa fa-instagram"></a>
+    <a href="#" aria-label="Pinterest" class="fa fa-pinterest"></a>
+    <a href="#" aria-label="Snapchat" class="fa fa-snapchat-ghost"></a>
+    <a href="#" aria-label="Skype" class="fa fa-skype"></a>
+    <a href="#" aria-label="Android" class="fa fa-android"></a>
+    <a href="#" aria-label="Dribbble" class="fa fa-dribbble"></a>
+    <a href="#" aria-label="Vimeo" class="fa fa-vimeo"></a>
+    <a href="#" aria-label="Tumblr" class="fa fa-tumblr"></a>
+    <a href="#" aria-label="Vine" class="fa fa-vine"></a>
+    <a href="#" aria-label="Foursquare" class="fa fa-foursquare"></a>
+    <a href="#" aria-label="StumbleUpon" class="fa fa-stumbleupon"></a>
+    <a href="#" aria-label="Flickr" class="fa fa-flickr"></a>
+    <a href="#" aria-label="Yahoo" class="fa fa-yahoo"></a>
+    <a href="#" aria-label="Reddit" class="fa fa-reddit"></a>
+    <a href="#" aria-label="RSS" class="fa fa-rss"></a>
+  </nav>
 
-        <div class="row">
-          <div class="leftcolumn">
-            <div class="card">
-              <h1>Nom étudiant</h1>
-              <h5>description</h5>
-              <div id="quiz">
-                <h2>A TOI DE JOUER</h2>
-                <div id="question"></div>
-                <div id="proposals"></div>
-              </div>
-            </div>
-          </div>
-          <div class="rightcolumn">
-            <div class="card">
-              <img src="/question.png" width="500" height="600">
-            </div>
-        </div>
+  <section class="row">
 
-        <div class="footer">
-          <h2>@2024</h2>
-        </div>
-`
+    <section class="leftcolumn">
+      <article class="card">
+        <h2>Nom étudiant</h2>
+        <p>Description</p>
+
+        <section id="quiz">
+          <h3>A TOI DE JOUER</h3>
+          <div id="question" aria-live="polite"></div>
+          <div id="proposals"></div>
+        </section>
+
+      </article>
+    </section>
+
+    <aside class="rightcolumn">
+      <div class="card">
+        <img 
+          src="/question.png"
+          alt="Illustration représentant un point d'interrogation"
+          width="500"
+          height="600"
+        >
+      </div>
+    </aside>
+
+  </section>
+
+  <footer>
+    <p>@2024</p>
+  </footer>
+
+</main>
+`;
 
 initQuizz();
