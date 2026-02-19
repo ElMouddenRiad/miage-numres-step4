@@ -1,15 +1,35 @@
 # Q1: Quels sont les arguments que vous pouvez utiliser pour convaincre votre Client de rendre son quizz accessible ? (Vous pouvez vous aider du cour)
 Réponse:
+Coté légal :
+- En Europe, la directive européenne 2016/2102 impose l’accessibilité pour les services publics numériques.
+- Les entreprises peuvent être exposées à des risques juridiques si leur service n’est pas accessible.
+
+Coté social :
+Rendre le site accessible permet d’inclure :
+- personnes malvoyantes
+- personnes utilisant un lecteur d’écran
+- personnes ne pouvant utiliser une souris
+
+Coté business
+- Plus d’utilisateurs potentiels
+- Meilleure image de marque
+- Amélioration du SEO (Google favorise les sites accessibles)
+- Argument technique
+- Code plus propre
+- Meilleure maintenabilité
+- Meilleure qualité logicielle globale
 
 # Q2: Ajouter le screen de votre score :
 Screen:
+![alt text](image.png)
 
 # Q3: Est-ce que l'analyse de Lighthouse est suffisante pour évaluer l'Accessibilité de votre Application ?
 Réponse:
-
+Non car il repose sur des tests automatisés (Axe).
+Il détecte seulement les problèmes techniques mesurables et les erreurs structurelles évidentes. Mais il ne peut pas détecter l'ergonomie clavier réelle, compréhension réelle avec lecteur d’écran ou l'analyse de la qualité du code 
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
 Réponse:
-
+entre 24 et 30 fois
 # Q5: Donner 3 roles ARIA et 3 propriété ARIA
 Réponse:
 
