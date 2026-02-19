@@ -60,21 +60,26 @@ Le score Lighthouse n’a pas augmenté car :
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
 Réponse:
+contrast ratio : 2.36
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse: 3.0
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse: 4.5
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
 Réponse:
+Modifier la couleur du texte (color), couleur du fond (background color), augmenter épaisseur police ou augmenter taille texte.
 
 # Q14: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-3.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
 Réponse:
+Avec seulement la couleur non.
+oui pour : icône ou changement au hover
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
