@@ -83,9 +83,12 @@ oui pour : icône ou changement au hover
 
 # Q16: Ajouter le screen de votre score Lighthouse
 Screen:
+![alt text](image-4.png)
 
 # Q17:  Proposition 1
 Description:
+Lorsqu’une nouvelle question apparaît, déplacer automatiquement le focus clavier dessus afin d’éviter que l’utilisateur ait à naviguer manuellement jusqu’à elle.
+
 Nb d'actions gagnée : 
 
 # Q18:  Proposition 2

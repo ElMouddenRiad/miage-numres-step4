@@ -8,31 +8,155 @@ document.querySelector('#app').innerHTML = `
     <h1>My Quizz</h1>
     <p>
       Pour accéder à la page About,
-      <a href="about/">aller à la page À propos</a>
+      <a href="about/"
+        aria-label="Accéder à la page À propos du site">
+        Consulter la page À propos
+      </a>
     </p>
   </header>
 
-  <nav class="topnav" aria-label="Réseaux sociaux">
-    <a href="#" aria-label="Facebook" class="fa fa-facebook"></a>
-    <a href="#" aria-label="Twitter" class="fa fa-twitter"></a>
-    <a href="#" aria-label="Google" class="fa fa-google"></a>
-    <a href="#" aria-label="LinkedIn" class="fa fa-linkedin"></a>
-    <a href="#" aria-label="YouTube" class="fa fa-youtube"></a>
-    <a href="#" aria-label="Instagram" class="fa fa-instagram"></a>
-    <a href="#" aria-label="Pinterest" class="fa fa-pinterest"></a>
-    <a href="#" aria-label="Snapchat" class="fa fa-snapchat-ghost"></a>
-    <a href="#" aria-label="Skype" class="fa fa-skype"></a>
-    <a href="#" aria-label="Android" class="fa fa-android"></a>
-    <a href="#" aria-label="Dribbble" class="fa fa-dribbble"></a>
-    <a href="#" aria-label="Vimeo" class="fa fa-vimeo"></a>
-    <a href="#" aria-label="Tumblr" class="fa fa-tumblr"></a>
-    <a href="#" aria-label="Vine" class="fa fa-vine"></a>
-    <a href="#" aria-label="Foursquare" class="fa fa-foursquare"></a>
-    <a href="#" aria-label="StumbleUpon" class="fa fa-stumbleupon"></a>
-    <a href="#" aria-label="Flickr" class="fa fa-flickr"></a>
-    <a href="#" aria-label="Yahoo" class="fa fa-yahoo"></a>
-    <a href="#" aria-label="Reddit" class="fa fa-reddit"></a>
-    <a href="#" aria-label="RSS" class="fa fa-rss"></a>
+  <nav class="topnav" aria-label="Liens vers nos réseaux sociaux">
+
+    <a href="https://facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Facebook (ouvre dans un nouvel onglet)">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://twitter.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Twitter (ouvre dans un nouvel onglet)">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter Google (ouvre dans un nouvel onglet)">
+      <i class="fa fa-google" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://linkedin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page LinkedIn (ouvre dans un nouvel onglet)">
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://youtube.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre chaîne YouTube (ouvre dans un nouvel onglet)">
+      <i class="fa fa-youtube" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Instagram (ouvre dans un nouvel onglet)">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://pinterest.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Pinterest (ouvre dans un nouvel onglet)">
+      <i class="fa fa-pinterest" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://snapchat.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Snapchat (ouvre dans un nouvel onglet)">
+      <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://skype.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter Skype (ouvre dans un nouvel onglet)">
+      <i class="fa fa-skype" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://android.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter Android (ouvre dans un nouvel onglet)">
+      <i class="fa fa-android" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://dribbble.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Dribbble (ouvre dans un nouvel onglet)">
+      <i class="fa fa-dribbble" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://vimeo.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Vimeo (ouvre dans un nouvel onglet)">
+      <i class="fa fa-vimeo" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://tumblr.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Tumblr (ouvre dans un nouvel onglet)">
+      <i class="fa fa-tumblr" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://vine.co"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter Vine (ouvre dans un nouvel onglet)">
+      <i class="fa fa-vine" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://foursquare.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Foursquare (ouvre dans un nouvel onglet)">
+      <i class="fa fa-foursquare" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://stumbleupon.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter StumbleUpon (ouvre dans un nouvel onglet)">
+      <i class="fa fa-stumbleupon" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://flickr.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Flickr (ouvre dans un nouvel onglet)">
+      <i class="fa fa-flickr" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://yahoo.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter Yahoo (ouvre dans un nouvel onglet)">
+      <i class="fa fa-yahoo" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://reddit.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visiter notre page Reddit (ouvre dans un nouvel onglet)">
+      <i class="fa fa-reddit" aria-hidden="true"></i>
+    </a>
+
+    <a href="https://rss.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Consulter notre flux RSS (ouvre dans un nouvel onglet)">
+      <i class="fa fa-rss" aria-hidden="true"></i>
+    </a>
+
   </nav>
 
   <section class="row">
