@@ -89,12 +89,21 @@ Screen:
 Description:
 Lorsqu’une nouvelle question apparaît, déplacer automatiquement le focus clavier dessus afin d’éviter que l’utilisateur ait à naviguer manuellement jusqu’à elle.
 
+je modifie <div id="question" aria-live="polite"></div>
+et ajouté questionElement = document.getElementById("question").focus({ focusVisible: true }); dans quizz.js
+
+cela permet d’éviter une navigation clavier inutile et améliore la fluidité d’usage. Gain estimé : 2 à 4 actions supprimées par question
 Nb d'actions gagnée : 
+2 pressons par question 
 
 # Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
+Description: Limiter la navigation clavier uniquement aux réponses actives en contrôlant le tabindex ; placer directement sur la première proposition ou bien déplacer les liens sociaux en bas de page (Solution retenue) :
+Le <nav class="topnav"> contient 20+ liens. Ils sont placés avant le quiz, je les déplace donc au niveau du footer
+
+Nb d'actions gagnée : +23
 
 # Q19:  Proposition 3
-Description:
+Description: Utiliser ARIA live : lecteur d’écran : 
+j'ai ajouté <div id="question" aria-live="assertive" tabindex="-1"></div> dans la section quizz et resultElement.focus({ focusVisible: true }); dans le showResult() du quizz
 Nb d'actions gagnée : 
+accessibilité malvoyants 
